@@ -18,6 +18,27 @@ public class VectorExample {
 
         System.out.println("Original Vector: " + fruits);
 
+        // addElement(): adding an element
+        fruits.addElement("Pineapple");
+        System.out.println("After addElement(): " + fruits);
+
+        // size(): getting the number of elements
+        System.out.println("Size: " + fruits.size());
+
+        // firstElement(): getting the first element
+        System.out.println("First element: " + fruits.firstElement());
+
+        // lastElement(): getting the last element
+        System.out.println("Last element: " + fruits.lastElement());
+
+        // elementAt(): accessing an element by index
+        System.out.println("Element at index 2: " + fruits.elementAt(2));
+
+        // removeElementAt(): removing an element by index
+        fruits.removeElementAt(1);
+        System.out.println("After removeElementAt(): " + fruits);
+
+
 
     }
 }
