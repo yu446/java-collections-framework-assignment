@@ -2,7 +2,7 @@
 package list;
 
 import java.util.Vector;
-
+import java.util.Iterator;
 public class VectorExample {
 
     public static void main(String[] args) {
@@ -37,6 +37,14 @@ public class VectorExample {
         // removeElementAt(): removing an element by index
         fruits.removeElementAt(1);
         System.out.println("After removeElementAt(): " + fruits);
+        // iterator(): traversing the Vector
+        Iterator<String> iterator = fruits.iterator();
+
+        System.out.println("Using Iterator:");
+
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
 
 
 
