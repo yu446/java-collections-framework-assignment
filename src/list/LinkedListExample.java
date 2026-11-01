@@ -1,6 +1,6 @@
 
 package list;
-
+import java.util.Iterator;
 import java.util.LinkedList;
 
 public class LinkedListExample {
@@ -38,6 +38,16 @@ public class LinkedListExample {
 
         // size()
         System.out.println("Size: " + fruits.size());
+
+        // iterator(): traversing the LinkedList
+        Iterator<String> iterator = fruits.iterator();
+
+        System.out.println("Using Iterator:");
+
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
+
     }
 }
 
